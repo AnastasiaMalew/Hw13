@@ -16,7 +16,7 @@ public class Author {
     }
 
     public int hashCode() {
-        return nameAuthor.length() + famousAuthor.length();
+        return Objects.hash(nameAuthor, famousAuthor);
     }
 
     public boolean equals(Object a) {
@@ -27,7 +27,7 @@ public class Author {
             return false;
         }
         Author author = (Author) a;
-        return Objects.equals(nameAuthor, author) && Objects.equals(famousAuthor, author);
+        return Objects.equals(nameAuthor, this.nameAuthor) && Objects.equals(famousAuthor, this.famousAuthor);
     }
 
     @Override
