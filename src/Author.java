@@ -27,7 +27,7 @@ public class Author {
             return false;
         }
         Author author = (Author) a;
-        return Objects.equals(nameAuthor, this.nameAuthor) && Objects.equals(famousAuthor, this.famousAuthor);
+        return Objects.equals(nameAuthor, author.nameAuthor) && Objects.equals(famousAuthor, author.famousAuthor);
     }
 
     @Override

@@ -6,5 +6,6 @@ public class Main {
         Book storm = new Book("Гроза", 1859, storm1);
         Author warAndPeace1 = new Author("Лев", "Толстой");
         Book warAndPeace = new Book("Война и мир", 1867, warAndPeace1);
+
     }
 }
